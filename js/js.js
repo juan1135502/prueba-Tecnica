@@ -45,5 +45,27 @@ const usuarios = async () => {
 
 usuarios();
 
+/*
+const validar = ()=>{
+    const nombre =  document.getElementById("nombre").value;
+    const correo =  document.getElementById("Email").value;
+    const area =  document.getElementById("area-select").value;
+    const descripcion =  document.getElementById("Des-Textarea").value;
+    const role1 =  document.getElementById("femenino").value;
+    let valido = false;
+    const radios = document.getElementsByName('sexo');
+
+    console.log(nombre+' '+correo+' '+area+' '+ descripcion+' ');
+
+    if (nombre != '' && correo != '' && area != '' && descripcion != ''  ) {
+        valido = true;
+    }else{
+        valido = false;
+    }
+
+
+   // return valido;
+}*/
+
 
 
