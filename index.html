@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>Prueba tecnica</title>
+</head>
+<body>
+    
+   
+    
+    
+    <form class="container" id="cliente"> 
+        <h2>Crear empleado</h2>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <p class="lead">Los Campos con asteriscos (*) son abligatorios.</p>
+            </div>
+          </div>
+        <div class="form-group row">
+            <div class="col-2">
+               <label for="nombre">Nombre Completo *</label> 
+            </div>
+          <div class="col-10">
+                <input type="text" class="form-control" name="nombres" id="nombre" placeholder="Nombre completo del empleado">
+          </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="Email" class="col-sm-2 col-form-label">Email*</label>
+            <div class="col-sm-10">
+              <input type="text"  class="form-control" name="correo" id="Email" placeholder="email@example.com">
+            </div>
+          </div>
+
+
+          <fieldset class="form-group row">
+            <legend class="col-form-label col-sm-2 float-sm-left pt-0">Sexo *</legend>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="masculino" value="M" checked>
+                <label class="form-check-label" for="masculino">
+                  Masculino
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="femenino" value="F">
+                <label class="form-check-label" for="femenino">
+                  Femenino
+                </label>
+              </div>
+            </div>
+          </fieldset>
+
+
+        <div class="form-group row">
+            <div class="col-2">
+                <label for="exampleFormControlSelect1">
+                    Area *
+                </label>
+            </div>
+          <div class="col-10">
+                <select class="form-control" name="areas" id="area">
+                    <option value="1">Administrativa y financiera</option>
+                    <option value="2">Ingenieria</option>
+                    <option value="5">Desarrollo de negocio</option>
+                    <option value="6">Proyectos</option>
+                    <option value="7">Servicios</option>
+                    <option value="8">Calidad</option>
+                    
+                </select>
+          </div>
+
+        </div>
+
+
+        <div class="form-group row">
+            <div class="col-2">
+                <label for="validationTextarea">Descripcion *</label>
+            </div>
+            <div class="col-10">
+                <textarea class="form-control " name="descripcions" id="descripcion" placeholder="Descripcion de la experiencia del empleado" required></textarea>
+            </div>
+            
+          </div>
+
+          <div class="form-group row">
+            <div class="col-2"></div>
+            <div class="form-check">
+              <input class="form-check-input " type="checkbox" value="1" name="boletins" id="boletin" aria-describedby="invalidCheck3Feedback" >
+              <label class="form-check-label" for="boletin">
+                Deseo recibir boletin informativo
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <div class="col-2"><p>Roles *</p></div>
+            <div class="col-10">
+                <div class="form-check">
+                    <input class="form-check-input " type="checkbox" name="profesions" value="1" id="profesion" aria-describedby="Check1Feedback" >
+                    <label class="form-check-label" for="profesion">
+                      Profesional de Proyectos -Desarrollador
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input " type="checkbox" name="gerentes" id="gerente" value="8" aria-describedby="Check2Feedback" >
+                    <label class="form-check-label" for="gerente">
+                      Gerente estrategico
+                    </label>
+                  </div><div class="form-check">
+                    <input class="form-check-input " type="checkbox" name="auxs" id="aux" value="7" aria-describedby="Check3Feedback" >
+                    <label class="form-check-label" for="aux">
+                      Auxiliar Administrativo
+                    </label>
+                  </div>
+            </div>
+            
+          </div>
+
+
+          <button class="btn btn-primary" type="submit">Guardar</button>
+      </form>
+
+      <div class="container">
+        <div class="d-flex flex-row-reverse ">
+          <button type="button" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
+            <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+            <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+          </svg> Crear</button>
+        </div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+                <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                <path fill-rule="evenodd" d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z"/>
+                <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
+              </svg> Nombre</th>
+              <th scope="col">@ Email</th>
+              <th scope="col">Sexo</th>
+              <th scope="col"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-briefcase-fill" viewBox="0 0 16 16">
+                <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5z"/>
+                <path d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z"/>
+              </svg> Area</th>
+              <th scope="col"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+              </svg> Boletin</th>
+              <th scope="col"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+              </svg> Modificar</th>
+              <th scope="col"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z"/>
+              </svg> Eliminar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <script src="./js/js.js"></script>
+</body>
+</html>
