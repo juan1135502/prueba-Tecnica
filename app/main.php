@@ -3,7 +3,15 @@ require_once("Empleados.php");
 
 //$objEmpleado = new Empleado();
 //$insert = $objEmpleado -> insertarEmpleado("Jose","jose13@gmail.com","M",2,1,"descripcion prueba",1);
+function convertirUtf8(&$array){
+    array_walk_recursive($array, function(&$item,$key){
+        if (!mb_detect_encoding($item,'utf-8',true)) {
+            $item = utf8_encode($item);
+        }
+    });
 
+    return $array;
+}
 function validar(){
     $objEmpleado = new Empleado();
     if( !empty($_POST) ){
@@ -93,12 +101,16 @@ function validar(){
         }
         
     }else{
+        header('Content-Type: application/json');
         $empleados = $objEmpleado->getEmpledos();
-        
-        echo ($empleados);
-        
+        $arr = convertirUtf8 ($empleados);
+        echo json_encode($arr);
+    
     }
 
+    
+
+    
     
 
         
