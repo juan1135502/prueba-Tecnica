@@ -9,124 +9,140 @@
 </head>
 <body>
     
-   
-    
-    
-    <form class="container" id="cliente"> 
-        <h2>Crear empleado</h2>
-        <div class="jumbotron jumbotron-fluid">
-            <div class="container">
-              <p class="lead">Los Campos con asteriscos (*) son abligatorios.</p>
-            </div>
-          </div>
-        <div class="form-group row">
-            <div class="col-2">
-               <label for="nombre">Nombre Completo *</label> 
-            </div>
-          <div class="col-10">
-                <input type="text" class="form-control" name="nombres" id="nombre" placeholder="Nombre completo del empleado">
-          </div>
+  <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
-
-        <div class="form-group row">
-            <label for="Email" class="col-sm-2 col-form-label">Email*</label>
-            <div class="col-sm-10">
-              <input type="text"  class="form-control" name="correo" id="Email" placeholder="email@example.com">
-            </div>
-          </div>
-
-
-          <fieldset class="form-group row">
-            <legend class="col-form-label col-sm-2 float-sm-left pt-0">Sexo *</legend>
-            <div class="col-sm-10">
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="gridRadios" id="masculino" value="M" checked>
-                <label class="form-check-label" for="masculino">
-                  Masculino
-                </label>
+        <div class="modal-body">
+          <form class="container" id="cliente"> 
+            <h2>Crear empleado</h2>
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                  <p class="lead">Los Campos con asteriscos (*) son abligatorios.</p>
+                </div>
               </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="gridRadios" id="femenino" value="F">
-                <label class="form-check-label" for="femenino">
-                  Femenino
-                </label>
+            <div class="form-group row">
+                <div class="col-2">
+                   <label for="nombre">Nombre Completo *</label> 
+                </div>
+              <div class="col-10">
+                    <input type="text" class="form-control" name="nombres" id="nombre" placeholder="Nombre completo del empleado">
               </div>
             </div>
-          </fieldset>
-
-
-        <div class="form-group row">
-            <div class="col-2">
-                <label for="exampleFormControlSelect1">
-                    Area *
-                </label>
-            </div>
-          <div class="col-10">
-                <select class="form-control" name="areas" id="area">
-                    <option value="1">Administrativa y financiera</option>
-                    <option value="2">Ingenieria</option>
-                    <option value="5">Desarrollo de negocio</option>
-                    <option value="6">Proyectos</option>
-                    <option value="7">Servicios</option>
-                    <option value="8">Calidad</option>
-                    
-                </select>
-          </div>
-
-        </div>
-
-
-        <div class="form-group row">
-            <div class="col-2">
-                <label for="validationTextarea">Descripcion *</label>
-            </div>
-            <div class="col-10">
-                <textarea class="form-control " name="descripcions" id="descripcion" placeholder="Descripcion de la experiencia del empleado" required></textarea>
-            </div>
-            
-          </div>
-
-          <div class="form-group row">
-            <div class="col-2"></div>
-            <div class="form-check">
-              <input class="form-check-input " type="checkbox" value="1" name="boletins" id="boletin" aria-describedby="invalidCheck3Feedback" >
-              <label class="form-check-label" for="boletin">
-                Deseo recibir boletin informativo
-              </label>
-            </div>
-          </div>
-
-          <div class="form-group row">
-            <div class="col-2"><p>Roles *</p></div>
-            <div class="col-10">
-                <div class="form-check">
-                    <input class="form-check-input " type="checkbox" name="profesions" value="1" id="profesion" aria-describedby="Check1Feedback" >
-                    <label class="form-check-label" for="profesion">
-                      Profesional de Proyectos -Desarrollador
+    
+            <div class="form-group row">
+                <label for="Email" class="col-sm-2 col-form-label">Email*</label>
+                <div class="col-sm-10">
+                  <input type="text"  class="form-control" name="correo" id="Email" placeholder="email@example.com">
+                </div>
+              </div>
+    
+    
+              <fieldset class="form-group row">
+                <legend class="col-form-label col-sm-2 float-sm-left pt-0">Sexo *</legend>
+                <div class="col-sm-10">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="masculino" value="M" checked>
+                    <label class="form-check-label" for="masculino">
+                      Masculino
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input " type="checkbox" name="gerentes" id="gerente" value="8" aria-describedby="Check2Feedback" >
-                    <label class="form-check-label" for="gerente">
-                      Gerente estrategico
-                    </label>
-                  </div><div class="form-check">
-                    <input class="form-check-input " type="checkbox" name="auxs" id="aux" value="7" aria-describedby="Check3Feedback" >
-                    <label class="form-check-label" for="aux">
-                      Auxiliar Administrativo
+                    <input class="form-check-input" type="radio" name="gridRadios" id="femenino" value="F">
+                    <label class="form-check-label" for="femenino">
+                      Femenino
                     </label>
                   </div>
+                </div>
+              </fieldset>
+    
+    
+            <div class="form-group row">
+                <div class="col-2">
+                    <label for="exampleFormControlSelect1">
+                        Area *
+                    </label>
+                </div>
+              <div class="col-10">
+                    <select class="form-control" name="areas" id="area">
+                        <option value="1">Administrativa y financiera</option>
+                        <option value="2">Ingenieria</option>
+                        <option value="5">Desarrollo de negocio</option>
+                        <option value="6">Proyectos</option>
+                        <option value="7">Servicios</option>
+                        <option value="8">Calidad</option>
+                        
+                    </select>
+              </div>
+    
             </div>
-            
-          </div>
-
-
-          <button class="btn btn-primary" type="submit">Guardar</button>
-      </form>
+    
+    
+            <div class="form-group row">
+                <div class="col-2">
+                    <label for="validationTextarea">Descripcion *</label>
+                </div>
+                <div class="col-10">
+                    <textarea class="form-control " name="descripcions" id="descripcion" placeholder="Descripcion de la experiencia del empleado" required></textarea>
+                </div>
+                
+              </div>
+    
+              <div class="form-group row">
+                <div class="col-2"></div>
+                <div class="form-check">
+                  <input class="form-check-input " type="checkbox" value="1" name="boletins" id="boletin" aria-describedby="invalidCheck3Feedback" >
+                  <label class="form-check-label" for="boletin">
+                    Deseo recibir boletin informativo
+                  </label>
+                </div>
+              </div>
+    
+              <div class="form-group row">
+                <div class="col-2"><p>Roles *</p></div>
+                <div class="col-10">
+                    <div class="form-check">
+                        <input class="form-check-input " type="checkbox" name="profesions" value="1" id="profesion" aria-describedby="Check1Feedback" >
+                        <label class="form-check-label" for="profesion">
+                          Profesional de Proyectos -Desarrollador
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input " type="checkbox" name="gerentes" id="gerente" value="8" aria-describedby="Check2Feedback" >
+                        <label class="form-check-label" for="gerente">
+                          Gerente estrategico
+                        </label>
+                      </div><div class="form-check">
+                        <input class="form-check-input " type="checkbox" name="auxs" id="aux" value="7" aria-describedby="Check3Feedback" >
+                        <label class="form-check-label" for="aux">
+                          Auxiliar Administrativo
+                        </label>
+                      </div>
+                </div>
+                
+              </div>
+    
+    
+              <button class="btn btn-primary" type="submit">Guardar</button>
+          </form>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+   
+    
+    
+    
 
       <div class="container">
         <div class="d-flex flex-row-reverse ">
-          <button type="button" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
             <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
             <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
           </svg> Crear</button>
@@ -157,25 +173,8 @@
               </svg> Eliminar</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Larry</td>
-              <td>the Bird</td>
-              <td>@twitter</td>
-            </tr>
+          <tbody id="tab">
+            
           </tbody>
         </table>
       </div>
